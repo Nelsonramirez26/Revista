@@ -1,0 +1,38 @@
+.listad-noticias {
+    margin-left: 45px;
+
+    @include tablet {
+
+        margin-left: 10px;
+        display:inline-block;
+
+    }
+
+    @include celular {
+
+        margin-left:0px;
+
+    }
+}
+
+main {
+    margin: 0 auto;
+
+    @include celular {
+
+        margin-left:0px;
+
+    }
+
+    @include tablet {
+
+        width: $ancho_pantalla_tablet;
+
+    }
+
+    @include desktop {
+
+        width: $ancho_pantalla_desktop;
+        
+    }
+}

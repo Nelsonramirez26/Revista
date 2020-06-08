@@ -1,0 +1,22 @@
+.contenedor {
+    margin: 0 auto;
+
+    @include celular {
+
+
+    }
+
+    @include tablet {
+
+        width: $ancho_pantalla_tablet;
+
+
+    }
+
+    @include desktop {
+
+        width: $ancho_pantalla_desktop;
+        
+    }
+    
+}

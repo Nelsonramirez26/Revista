@@ -1,0 +1,116 @@
+.header {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+
+
+    @include desktop {
+
+        width: $ancho_noticias_desktop;
+        
+    }
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+
+    @include celular {
+
+        font-size: $font_size_logo_celular;
+       
+    }
+
+    @include otro {
+
+        font-size: $font_size_logo_otro;
+
+    }
+}
+
+nav {
+    display: inline-block;
+    text-align: right;
+
+
+    @include tablet {
+
+        width: $ancho_nav_tablet;
+
+    }
+
+    @include celular {
+
+        width: $ancho_nav_celular;
+
+        
+    }
+
+     @include otro {
+
+        width: $ancho_nav_otro;
+
+    }
+
+    @include desktop {
+
+        width: $ancho_nav_dekstop;
+        
+    }
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style:none;
+
+    @include otro {
+
+        font-size: $font_size_lista_otro;
+        padding-left: $padding_left_lista_otro;        
+
+    }
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 5px;
+
+    @include otro {
+        
+        padding-right:$padding_right_items_otro;
+        
+
+    }
+
+
+    
+}
+
+.input-menu {
+    border-radius: 30px;
+
+    @include celular {
+
+        width: $ancho_input_menu_celular;
+
+    }
+
+}
+
+#item_ocultar {
+
+    @include celular {
+
+        display:none;
+
+    }
+
+
+}

@@ -1,0 +1,23 @@
+footer {
+    margin: 0 auto;
+    text-align: center;
+
+    @include celular {
+
+
+    }
+
+    @include tablet {
+
+        width: $ancho_pantalla_tablet;
+
+
+    }
+
+    @include desktop {
+
+        width: $ancho_pantalla_desktop;
+        
+    }
+
+}

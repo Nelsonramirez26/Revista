@@ -1,0 +1,30 @@
+.newsletter {
+    background-color: #f2f4f5;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+
+
+    @include celular {
+
+    }
+
+    @include tablet {
+
+        width: $ancho_pantalla_tablet;
+
+    }
+
+    @include desktop {
+
+        width: $ancho_pantalla_desktop;
+        
+    }
+
+    
+}
+
+.newsletter h2 {
+    font-size: 24px
+}
